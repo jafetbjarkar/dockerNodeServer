@@ -1,0 +1,12 @@
+version: "2"
+services:
+  node:
+    image: "node:8"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/usr/src/app
+    expose:
+      - "4000"
+    
+  #  entrypoint: ['npm', 'run', 'serve']
